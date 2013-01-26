@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic);
+
+.container, .navbar-inner {
+   margin: 0 auto;
+   max-width: 900px;
+}
+.container img {
+    max-width: 890px;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+.brand {
+    font-family: 'Lobster', cursive;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Russo One', sans-serif;
+}
+.blog-list-entry {
+    margin-bottom: 10px;
+}
+
+.blog-list-entry a{
+    font-size: 16px;
+    font-weight: bold;
+}
