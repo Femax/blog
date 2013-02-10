@@ -8,11 +8,11 @@
     </appender>
 
     <!-- don't change levels here, use profiles instead -->
-    <logger name="org.springframework" level="INFO" />
-    <logger name="${package}.service" level="DEBUG" />
+    <logger name="org.springframework" level="${spring.log.level}" />
+    <logger name="${package}.service" level="${service.log.level}" />
 
     <root>
-        <level value="DEBUG"/>
+        <level value="${log.level}"/>
         <appender-ref ref="STDOUT"/>
     </root>
 
