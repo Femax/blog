@@ -27,26 +27,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="none"/>
-    <meta name="author" content=""/>
-    <meta name="keywords" content=""/>
+    <meta name="author" content="dimafeng"/>
+    <meta name="keywords" content="java, liferay, tomcat, mysql, vaadin, web, portlet, algorithms"/>
     <meta name="description" content=""/>
 
     <%-- Place favicon.ico and apple-touch-icon.png in the webapps directory --%>
     <link rel="icon" type="image/x-icon" href="${base}/favicon.ico">
-
-    <util:js value="/resources/js/vendor/modernizr-2.6.2.js" />
-
-    <%-- https://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html --%>
-    <link rel="apple-touch-icon" href="${base}/apple-touch-icon.png"/>
-    <link rel="apple-touch-icon-precomposed" href="${base}/apple-touch-icon-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="${base}/apple-touch-icon-57x57-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="${base}/apple-touch-icon-72x72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="${base}/apple-touch-icon-114x114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="${base}/apple-touch-icon-144x144-precomposed.png"/>
-
-    <%--<link rel="apple-touch-startup-image" href="/startup.png">--%>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
     <tiles:importAttribute name="title" toName="title_code"/>
     <title><spring:message code="${title_code}"/></title>
