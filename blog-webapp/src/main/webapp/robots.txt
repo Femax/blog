@@ -2,3 +2,4 @@
 
 User-agent: *
 Allow: /
+Sitemap: http://dimafeng.ru/sitemap.xml
