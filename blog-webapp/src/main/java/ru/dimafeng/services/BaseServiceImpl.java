@@ -1,6 +1,7 @@
 package ru.dimafeng.services;
 
-import com.petebevin.markdown.MarkdownProcessor;
+import org.pegdown.Extensions;
+import org.pegdown.PegDownProcessor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cache.annotation.Cacheable;
@@ -25,7 +26,7 @@ public class BaseServiceImpl implements BaseService {
         List<BlogEntry> blogEntries = new ArrayList<BlogEntry>();
         try {
             URL url = new URL("https://raw.github.com/dimafeng/blog-data/master/list.txt");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
 
             String buff = null;
             while ((buff = reader.readLine()) != null) {
@@ -73,8 +74,8 @@ public class BaseServiceImpl implements BaseService {
                 sb.append(buff);
                 sb.append("\n");
             }
-            MarkdownProcessor mp = new MarkdownProcessor();
-            return mp.markdown(sb.toString());
+
+            return new PegDownProcessor(Extensions.FENCED_CODE_BLOCKS).markdownToHtml(sb.toString());
         } catch (Exception e) {
             log.error(e.getLocalizedMessage(), e);
         }

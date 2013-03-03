@@ -366,9 +366,9 @@
         </dependency>
 
         <dependency>
-          <groupId>org.markdownj</groupId>
-          <artifactId>markdownj</artifactId>
-          <version>0.3.0-1.0.2b4</version>
+          <groupId>org.pegdown</groupId>
+          <artifactId>pegdown</artifactId>
+          <version>1.2.1</version>
         </dependency>
 
         <!-- servlet api provided scope for IDE only-->
