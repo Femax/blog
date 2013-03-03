@@ -19,7 +19,7 @@ public class MainController {
     @Autowired
     private BaseService baseService;
 
-    @RequestMapping(value = "/main", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String main(Model model) {
 
         model.addAttribute("items", baseService.getEntries());

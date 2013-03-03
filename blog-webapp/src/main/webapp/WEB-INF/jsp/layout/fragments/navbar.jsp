@@ -21,10 +21,10 @@
                         <spring:message code="navbar.${item}.title" var="itemTitle"/>
                         <c:choose>
                             <c:when test="${item eq selectedView}">
-                                <li class="active"><a href="/${item}/">${itemTitle}</a></li>
+                                <li class="active"><a href="/${item}">${itemTitle}</a></li>
                             </c:when>
                             <c:otherwise>
-                                <li><a href="/${item}/">${itemTitle}</a></li>
+                                <li><a href="/${item}">${itemTitle}</a></li>
                             </c:otherwise>
                         </c:choose>
                     </c:forEach>
