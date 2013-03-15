@@ -26,7 +26,6 @@
     <meta name='yandex-verification' content='67a0add6000d7912' />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="none"/>
     <meta name="author" content="dimafeng"/>
     <meta name="keywords" content="java, liferay, tomcat, mysql, vaadin, web, portlet, algorithms"/>
     <meta name="description" content=""/>
